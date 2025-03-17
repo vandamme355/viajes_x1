@@ -19,13 +19,19 @@
     
     <main>
         <form action="procesar_reserva.php" method="POST">
+            
+             <!-- Campo para ingresar el nombre del usuario -->
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
-
-             <!--en este formulario me falta ingresar el impit de el mail  -->
-
+            
+            <!-- Campo para ingresar el correo electrónico del usuario -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <!-- Campo para seleccionar el destino de la reserva -->
             <label for="destino">Destino:</label>
             <select id="destino" name="destino" required>
+                
                 <option value="paris">París</option>
                 <option value="cancun">Cancún</option>
             </select>
